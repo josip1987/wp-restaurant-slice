@@ -12,12 +12,13 @@
 
 	add_action('wp_enqueue_scripts', 'wp_restaurant_styles');
 
-	register_nav_menus( array(
-		'main_menu' => __('Main Menu', 'menu')
-	) );
+	// add menus
+	function wp_restaurant_menus() {
+		register_nav_menus(array(
+			'header-menu' => __('Header Menu', 'restaurant')
+		) );
+	}
 
-	add_theme_support('post-thumbnails' );
-
-	add_image_size('entry', 400, 150, true);
+	add_action('init', 'wp_restaurant_menus');
 
 ?>
