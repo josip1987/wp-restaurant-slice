@@ -1,0 +1,20 @@
+.mobile-menu a {
+    @mixin atSmall {
+        display: none;
+    }
+    
+    @mixin maxSmall {
+    
+        height: 2.5rem;
+        line-height: 2.5rem;
+        background-color: $red;
+        width: 100%;
+        display: block;
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-family: arial, helvetica;
+    }
+}

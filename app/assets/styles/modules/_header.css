@@ -1,0 +1,49 @@
+header.site-header {
+    border-bottom: 1px solid $border;
+    padding-bottom: 30px;
+}
+
+header.site-header .container {
+    
+    @mixin atSmall {
+        position: relative;
+    
+        & .header-information {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+div.address {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    
+    & p {
+        margin: 0;
+        font-size: 0.875rem;
+        text-align: center;
+        
+        @mixin atSmall {
+            text-align: right;
+        }
+    }
+}
+
+div.logo {
+    text-align: center;
+    
+    @mixin atSmall {
+        text-align: left;
+    }
+    
+    @mixin atMedium {
+        text-align: center;
+    }
+}
+
+img.logoimage {
+    width: 250px;
+}

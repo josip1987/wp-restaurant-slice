@@ -1,0 +1,38 @@
+nav.site-nav {
+    
+    display: none;
+    
+    @mixin atSmall {
+        display: block;
+    }
+    
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: table;
+    }
+    
+    & ul li {
+        @mixin atSmall {
+            display: table-cell;
+            width: 1%;           
+        }
+    }
+    
+    & ul li a {
+        text-align: center;
+        padding: 20px 0;
+        display: block;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+        font-family: arial, helvetica;
+    }
+}
+
+.current_page_item {
+    border-bottom: 8px solid $red;
+}

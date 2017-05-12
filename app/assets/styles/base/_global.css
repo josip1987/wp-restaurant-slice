@@ -1,25 +1,30 @@
-body {
-	font-family: 'Roboto', sans-serif;
-	color: #333;
+html {
+    box-sizing: border-box;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
-* {
-	box-sizing: border-box;
+h1 {
+    font-size: 3rem;
 }
 
-a {
-	color: #000;
+h2 {
+    font-size: 2.5rem;
+} 
+
+h3 {
+    font-size: 1.75rem;
+} 
+
+h4 {
+    font-size: 1.5rem;
+} 
+
+.clear,
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
 }
-
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em}
-a img.alignleft {float:left; margin:0 1em 1em 0}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-

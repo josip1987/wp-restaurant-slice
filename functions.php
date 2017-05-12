@@ -1,6 +1,5 @@
 <?php 
 	function wp_restaurant_styles() {
-		//wp_enqueue_style('wp_restaurant_stylesheet', get_stylesheet_uri());
 		wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/node_modules/font-awesome/css/font-awesome.min.css');
 
 		wp_register_style('style', get_template_directory_uri() . '/style.css', array(), 1.0 );
@@ -15,7 +14,8 @@
 	// add menus
 	function wp_restaurant_menus() {
 		register_nav_menus(array(
-			'header-menu' => __('Header Menu', 'restaurant')
+			'header-menu' => __('Header Menu', 'restaurant'),
+            'social-menu' => __('Social Menu', 'restaurant')
 		) );
 	}
 

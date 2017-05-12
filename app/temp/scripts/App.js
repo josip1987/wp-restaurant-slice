@@ -87,31 +87,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var ExampleClass = function () {
-	function ExampleClass() {
-		_classCallCheck(this, ExampleClass);
+var MobileMenu = function () {
+	function MobileMenu() {
+		_classCallCheck(this, MobileMenu);
 
-		this.heading = (0, _jquery2.default)('h1');
+		this.menuIcon = (0, _jquery2.default)('.mobile-menu a');
+		this.siteNav = (0, _jquery2.default)('nav.site-nav');
+		this.breakPoint = 768;
 		this.events();
 	}
 
-	_createClass(ExampleClass, [{
+	_createClass(MobileMenu, [{
 		key: 'events',
 		value: function events() {
-			this.heading.click(this.exampleFunction.bind(this));
+			this.menuIcon.click(this.toggleMenu.bind(this));
 		}
 	}, {
-		key: 'exampleFunction',
-		value: function exampleFunction() {
-			this.heading.hide();
-			alert('Bundle works!');
+		key: 'toggleMenu',
+		value: function toggleMenu() {
+			this.siteNav.toggle('slow');
 		}
 	}]);
 
-	return ExampleClass;
+	return MobileMenu;
 }();
 
-exports.default = ExampleClass;
+exports.default = MobileMenu;
 
 /***/ }),
 /* 1 */
@@ -120,13 +121,13 @@ exports.default = ExampleClass;
 "use strict";
 
 
-var _ExampleClass = __webpack_require__(0);
+var _MobileMenu = __webpack_require__(0);
 
-var _ExampleClass2 = _interopRequireDefault(_ExampleClass);
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var exampleClass = new _ExampleClass2.default();
+var mobileMenu = new _MobileMenu2.default();
 
 /***/ }),
 /* 2 */

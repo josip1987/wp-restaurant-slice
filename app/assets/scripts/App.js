@@ -1,3 +1,3 @@
-import ExampleClass from './modules/ExampleClass';
+import MobileMenu from './modules/MobileMenu';
 
-var exampleClass = new ExampleClass();
+var mobileMenu = new MobileMenu();
