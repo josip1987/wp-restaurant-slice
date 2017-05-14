@@ -3,7 +3,7 @@ nav.site-nav {
     display: none;
     
     @mixin atSmall {
-        display: block;
+        display: block !important;
     }
     
     & ul {
@@ -29,7 +29,7 @@ nav.site-nav {
         text-decoration: none;
         text-transform: uppercase;
         color: $black;
-        font-family: arial, helvetica;
+        font-family: 'Raleway', sans-serif;
     }
 }
 

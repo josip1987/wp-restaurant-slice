@@ -38,7 +38,7 @@
 
 	<div class="main-menu">
         <div class="mobile-menu">
-            <a href="#" class="mobile"><i class="fa fa-bars"> Menu</i></a>
+            <a href="#" class="mobile"><i class="fa fa-bars"></i></a>
         </div>
         
 		<div class="navigation container">

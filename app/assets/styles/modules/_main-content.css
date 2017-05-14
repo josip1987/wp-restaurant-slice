@@ -1,0 +1,14 @@
+.main-content {
+    padding: 60px;
+    background-color: $white;
+    position: relative;
+    
+    @mixin atSmall {
+        margin-top: -90px;
+    }
+}
+
+.content-text {
+    font-size: 1.125rem;
+    line-height: 50px;
+}

@@ -367,10 +367,15 @@ template {
 html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
 	        box-sizing: inherit;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
 }
 h1 {
     font-size: 3rem;
@@ -383,6 +388,9 @@ h3 {
 }
 h4 {
     font-size: 1.5rem;
+}
+.text-center {
+    text-align: center;
 }
 .clear,
 .clear::after {
@@ -494,7 +502,7 @@ nav.site-nav {
 }
 @media(min-width: 768px) {
 nav.site-nav {
-        display: block
+        display: block !important
 }
 	}
 nav.site-nav ul {
@@ -518,7 +526,7 @@ nav.site-nav ul li a {
         text-decoration: none;
         text-transform: uppercase;
         color: #000000;
-        font-family: arial, helvetica;
+        font-family: 'Raleway', sans-serif;
     }
 .current_page_item {
     border-bottom: 8px solid #a61206;
@@ -540,9 +548,149 @@ nav.site-nav ul li a {
         text-align: center;
         text-decoration: none;
         font-size: 1.25rem;
-        text-transform: uppercase;
-        font-family: arial, helvetica
+        text-transform: uppercase
 }
 	}
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 450px;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, .4);
+    }
+.hero .hero-content {
+        display: table-cell;
+        vertical-align: middle;
+        color: #FFF;
+        z-index: 2;
+        position: relative;
+    }
+@media(min-width: 768px) {
+        .hero .hero-text {
+            width: 80%;
+            margin: 0 auto;
+        }
+	}
+@media(min-width: 1100px) {
+        .hero .hero-text {
+            width: 60%;
+            margin: 0 auto;
+        }
+	}
+.main-content {
+    padding: 60px;
+    background-color: #FFF;
+    position: relative;
+}
+@media(min-width: 768px) {
+.main-content {
+        margin-top: -90px
+}
+	}
+.content-text {
+    font-size: 1.125rem;
+    line-height: 50px;
+}
+.box-information .single-box {
+        text-align: center;
+        width: 100%;
+        color: #FFF;
+    }
+@media(min-width: 480px) {
+.box-information .single-box {
+            width: 50%;
+            float: left
+    }
+            
+            .box-information .single-box:last-child {
+                width: 100%;
+            }
+	}
+@media(min-width: 768px) {
+.box-information .single-box {
+            width: 33.3%;
+            float: left
+    }
+            
+            .box-information .single-box:last-child {
+                width: 33.3%;
+            }
+	}
+.box-information .single-box:nth-child(1) {
+        background-color: #f19f30;
+    }
+.box-information .single-box:nth-child(2) {
+        background-color: #127427;
+    }
+.box-information .single-box:nth-child(3) {
+        background-color: #a61206;
+    }
+.box-information .single-box img {
+        width: 100%;
+        display: block;
+    }
+.box-information .single-box h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+.box-information .single-box p {
+        margin-bottom: 0px;
+    }
+.box-information .single-box .content-box {
+        padding: 10px;
+        vertical-align: middle;
+        display: table-cell;
+    }
+.footer {
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 1px solid #c1c1c1;
+    text-align: center;
+}
+.footer nav ul {
+        list-style: none;
+        padding: 0;
+    }
+.footer nav ul .current_page_item {
+            border-bottom: none;
+        }
+.footer nav ul li {
+        display: inline;
+    }
+.footer nav ul li:last-child .separator {
+            display: none;
+        }
+.footer nav ul li a {
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+.footer .location {
+        margin-top: 30px;
+    }
+.footer p {
+        margin: 0 0 5px 0;
+        font-size: 0.875rem;
+    }
+.footer .copyright {
+        margin-top: 20px;
+    }
 
 

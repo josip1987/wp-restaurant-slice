@@ -4,7 +4,6 @@ class MobileMenu {
 	constructor() {
 		this.menuIcon = $('.mobile-menu a');
         this.siteNav = $('nav.site-nav');
-        this.breakPoint = 768;
 		this.events();
 	}
 

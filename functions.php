@@ -4,6 +4,7 @@
 
 		wp_register_style('style', get_template_directory_uri() . '/style.css', array(), 1.0 );
 		wp_enqueue_style('style');
+        wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900");
 
    	    wp_enqueue_script('jquery');
    	    wp_enqueue_script('App', get_stylesheet_directory_uri() . '/app/temp/scripts/App.js', array('jquery'), '1.0', true);
@@ -21,4 +22,31 @@
 
 	add_action('init', 'wp_restaurant_menus');
 
+    // featured images 
+    
+    function wp_restaurant_setup() {
+        add_theme_support('post-thumbnails');
+        
+        add_image_size('boxes', 437, 291, true);
+    }
+        
+    add_action('after_setup_theme', 'wp_restaurant_setup');
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
