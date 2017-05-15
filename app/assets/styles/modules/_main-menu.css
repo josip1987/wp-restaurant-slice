@@ -34,5 +34,5 @@ nav.site-nav {
 }
 
 .current_page_item {
-    border-bottom: 8px solid $red;
+    border-bottom: 8px solid $primary;
 }

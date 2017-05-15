@@ -1,4 +1,7 @@
-.mobile-menu a {
+.mobile-menu span {
+    
+    cursor: pointer;
+    
     @mixin atSmall {
         display: none;
     }

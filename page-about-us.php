@@ -8,13 +8,13 @@
                 <h2><?php the_title(); ?></h2>
             </div>
         </div>
-    </div>
+    </div> <!--/.hero -->
 
     <div class="main-content container">
         <main class="text-center content-text">
              <?php the_content(); ?>
         </main>
-    </div>
+    </div> <!--/.main-content .container -->
 
     <div class="box-information container clear">
         <div class="single-box">
@@ -55,7 +55,7 @@
                 <?php the_field('description_3'); ?>
             </div>
         </div>
-    </div>
+    </div> <!--/.box-information -->
 
     <?php endwhile; ?>
 

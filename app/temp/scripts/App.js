@@ -10406,7 +10406,7 @@ var MobileMenu = function () {
 	function MobileMenu() {
 		_classCallCheck(this, MobileMenu);
 
-		this.menuIcon = (0, _jquery2.default)('.mobile-menu a');
+		this.menuIcon = (0, _jquery2.default)('.mobile-menu span');
 		this.siteNav = (0, _jquery2.default)('nav.site-nav');
 		this.events();
 	}
@@ -10419,7 +10419,7 @@ var MobileMenu = function () {
 	}, {
 		key: 'toggleMenu',
 		value: function toggleMenu() {
-			this.siteNav.toggle('slow');
+			this.siteNav.toggle('swing');
 		}
 	}]);
 

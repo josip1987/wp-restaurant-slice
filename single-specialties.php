@@ -12,7 +12,10 @@
 
     <div class="main-content container">
         <main class="text-center content-text">
+             <p class="ingredients">Ingredients:</p>
              <?php the_content(); ?>
+            
+            <p class="price"><span>&#8364;<?php the_field('price'); ?> </span></p>
         </main>
     </div> <!--/.main-content -->
 

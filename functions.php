@@ -28,9 +28,55 @@
         add_theme_support('post-thumbnails');
         
         add_image_size('boxes', 437, 291, true);
+        add_image_size('specialties', 768, 515, true);
     }
         
     add_action('after_setup_theme', 'wp_restaurant_setup');
+
+
+    // add menu area for specialties
+
+
+    function wp_restaurant_specialties() {
+        $labels = array(
+            'name'               => _x( 'Pizzas', 'restaurant' ),
+            'singular_name'      => _x( 'Pizza', 'post type singular name', 'lapizzeria' ),
+            'menu_name'          => _x( 'Pizzas', 'admin menu', 'restaurant' ),
+            'name_admin_bar'     => _x( 'Pizzas', 'add new on admin bar', 'lapizzeria' ),
+            'add_new'            => _x( 'Add New', 'book', 'restaurant' ),
+            'add_new_item'       => __( 'Add New Pizza', 'restaurant' ),
+            'new_item'           => __( 'New Pizzas', 'restaurant' ),
+            'edit_item'          => __( 'Edit Pizzas', 'restaurant' ),
+            'view_item'          => __( 'View Pizzas', 'restaurant' ),
+            'all_items'          => __( 'All Pizzas', 'restaurant' ),
+            'search_items'       => __( 'Search Pizzas', 'restaurant' ),
+            'parent_item_colon'  => __( 'Parent Pizzas:', 'restaurant' ),
+            'not_found'          => __( 'No Pizzas found.', 'restaurant' ),
+            'not_found_in_trash' => __( 'No Pizzas found in Trash.', 'restaurant' )
+        );
+
+        $args = array(
+            'labels'             => $labels,
+        'description'        => __( 'Description.', 'restaurant' ),
+            'public'             => true,
+            'publicly_queryable' => true,
+            'show_ui'            => true,
+            'show_in_menu'       => true,
+            'query_var'          => true,
+            'rewrite'            => array( 'slug' => 'specialties' ),
+            'capability_type'    => 'post',
+            'has_archive'        => true,
+            'hierarchical'       => false,
+            'menu_position'      => 6,
+            'supports'           => array( 'title', 'editor', 'thumbnail' ),
+        'taxonomies'          => array( 'category' ),
+        );
+
+        register_post_type( 'specialties', $args );
+    }
+
+    add_action( 'init', 'wp_restaurant_specialties' );
+
 ?>
 
 

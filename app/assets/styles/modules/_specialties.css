@@ -1,0 +1,53 @@
+.primary-text {
+    color: $red;
+}
+
+.our-specialties {
+    padding: 0 60px;
+}
+
+.specialty-content {
+    padding: 20px;
+    
+    & h4 {
+        border-bottom: 1px solid $border;
+        padding: 15px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    & a {
+        color: $black;
+        text-decoration: none;
+    }
+    & h4 span {
+        float: right;
+        color: $orange;
+        font-size: 1.875rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    & p {
+        color: $darkgrey;
+        line-height: 1.875rem;
+    }
+}
+
+.single .hero {
+    top: 0;
+}
+
+.single-specialties {
+    & .ingredients, .price {
+        color: $red;
+        font-size: 1.875rem;
+        margin: 0;
+    }
+    
+    & .price span {
+        color: $black;
+        font-size: 1.25rem;
+    }
+}
+

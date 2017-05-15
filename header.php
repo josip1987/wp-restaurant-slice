@@ -6,7 +6,7 @@
 	<title>La Pizzeria</title>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?> >
 	<header class="site-header">
         <div class="container">
             <div class="logo">
@@ -38,7 +38,7 @@
 
 	<div class="main-menu">
         <div class="mobile-menu">
-            <a href="#" class="mobile"><i class="fa fa-bars"></i></a>
+            <span class="mobile"><i class="fa fa-bars"></i></span>
         </div>
         
 		<div class="navigation container">
