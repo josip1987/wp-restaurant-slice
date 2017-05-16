@@ -30,7 +30,13 @@ nav.site-nav {
         text-transform: uppercase;
         color: $black;
         font-family: 'Raleway', sans-serif;
+        transition: all .1s ease;
     }
+}
+
+nav.site-nav ul li a:hover {
+    background-color: $primary;
+    color: $white;
 }
 
 .current_page_item {

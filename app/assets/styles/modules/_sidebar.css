@@ -1,0 +1,68 @@
+.sidebar .searchform div {
+    position: relative;
+}
+
+.searchform #searchsubmit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background-color: $red;
+    text-indent: -9999;
+    color: transparent;
+    background-image: url(app/assets/images/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    cursor: pointer;
+}
+
+.searchform #s {
+    width: 100%;
+    padding: 10px;
+}
+
+.screen-reader-text {
+    display: none;
+}
+
+.sidebar .widget {
+    margin-bottom: 20px;
+    
+    & h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    
+    & ul {
+        list-style: none;
+    }
+    
+    & ul li {
+        margin-bottom: 5px;
+    }
+    
+    & ul li a {
+        color: $red;
+        text-decoration: none;
+        
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

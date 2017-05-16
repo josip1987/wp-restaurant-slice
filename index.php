@@ -47,6 +47,8 @@
                     </article> <!--/.entry -->
                  <?php endwhile; ?>
             </main>
+            
+            <?php get_sidebar(); ?>
         </div> <!--/.container-grid -->
     </div> <!--/.main-content -->
 
