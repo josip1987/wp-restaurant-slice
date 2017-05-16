@@ -1,0 +1,95 @@
+article.entry {
+    margin-top: 30px;
+}
+
+.entry-header {
+    margin-top: 20px;
+
+    & .date {
+        background-color: $orange;
+        float: left;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        margin-right: 20px;
+        
+        & time {
+            font-size: 1.875rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+        }
+        
+        & time span {
+            font-size: 1rem;
+            display: block;
+            text-transform: uppercase;
+            margin-top: -27px;
+        }
+    }
+    
+    & .entry-title {
+        float: left;
+        width: calc(100% - 90px);
+    }
+    
+    & h2 {
+        margin: 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        
+        @mixin atSmall {
+            font-size: 1.5rem;
+        }
+    }
+    
+    & .author {
+        font-size: 0.925rem;
+        text-transform: uppercase;
+        color: $black;
+        margin-top: -20px;
+        font-family: 'Raleway', sans-serif;
+        
+        & i {
+            font-size: 1.4rem;
+            color: $orange;
+        }
+    }
+}   
+
+.entry-content {
+    & p {
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+}
+
+.button {
+    background-color: $red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    width: auto;
+    border-radius: 8px;
+    color: $white;
+    padding: 0px 80px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button .primary {
+    background-color: $red;
+}
+
+.primary:hover {
+    background-color: $buttonhover; 
+}
+
+
+
+
+
+
+

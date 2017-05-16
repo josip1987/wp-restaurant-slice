@@ -777,5 +777,81 @@ nav.site-nav ul li a {
         color: #000000;
         font-size: 1.25rem;
     }
+article.entry {
+    margin-top: 30px;
+}
+.entry-header {
+    margin-top: 20px;
+}
+.entry-header .date {
+        background-color: #f19f30;
+        float: left;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        margin-right: 20px;
+    }
+.entry-header .date time {
+            font-size: 1.875rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+        }
+.entry-header .date time span {
+            font-size: 1rem;
+            display: block;
+            text-transform: uppercase;
+            margin-top: -27px;
+        }
+.entry-header .entry-title {
+        float: left;
+        width: calc(100% - 90px);
+    }
+.entry-header h2 {
+        margin: 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+@media(min-width: 768px) {
+.entry-header h2 {
+            font-size: 1.5rem
+    }
+	}
+.entry-header .author {
+        font-size: 0.925rem;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: -20px;
+        font-family: 'Raleway', sans-serif;
+    }
+.entry-header .author i {
+            font-size: 1.4rem;
+            color: #f19f30;
+        }
+.entry-content p {
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+.button {
+    background-color: #a61206;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    width: auto;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 0px 80px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.button .primary {
+    background-color: #a61206;
+}
+.primary:hover {
+    background-color: #7b0d04; 
+}
 
 
