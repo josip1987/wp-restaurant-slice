@@ -859,6 +859,114 @@ article.entry {
 .primary:hover {
     background-color: #7b0d04; 
 }
+.entry-information {
+    
+    padding-top: 30px;
+}
+.entry-information .date {
+        background-color: #f19f30;
+        float: left;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        margin-right: 20px;
+    }
+.entry-information .author {
+        font-size: 0.925rem;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 20px;
+        font-family: 'Raleway', sans-serif;
+    }
+.entry-information .author i {
+            font-size: 1.4rem;
+            color: #f19f30;
+        }
+.entry-information time {
+        font-size: 1.875rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+.entry-information time span {
+        font-size: 1rem;
+        display: block;
+        text-transform: uppercase;
+        margin-top: -27px;
+    }
+.comment-respond h3 {
+        font-weight: 700;
+        text-align: center;
+    }
+.comment-respond form label {
+        width: 200px;
+        display: inline-block;
+        text-align: right;
+        padding-right: 20px;
+        font-weight: 700;
+    }
+.comment-respond form input, .comment-respond form textarea {
+        padding: 10px;
+        width: calc(100% - 220px);
+    }
+.comment-respond form input[type="submit"] {
+        margin: 0 auto;
+        display: inline-block;
+        border: none;
+        width: auto;
+        background-color: #a61206;
+        font-size: 1.25rem;
+        color: #FFF;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+.form-submit {
+    text-align: center;
+}
+@media(min-width: 768px) {
+.comments {
+        width: 80%
+}
+	}
+@media(min-width: 992px) {
+.comments {
+        width: 60%
+}
+	}
+.comment-notes {
+    text-align: center;
+}
+.logged-in-as a {
+    color: #a61206;
+    text-align: center;
+    display: block;
+}
+.commentlist {
+    list-style: none;
+}
+.commentlist li.comment {
+    background-color: #e1e1e1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.commentlist li.comment cite {
+        color: #a61206;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+.commentlist li.comment .comment-author {
+        margin-bottom: 10px;
+    }
+.commentlist li.comment a {
+        color: #a61206;
+        text-decoration: none;
+    }
+.commentlist li.comment .children {
+        list-style: none;
+    }
+.commentlist li.comment .children li {
+        background-color: #FFF;
+        margin-top: 20px;
+    }
 .sidebar .searchform div {
     position: relative;
 }
