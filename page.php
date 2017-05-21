@@ -10,7 +10,7 @@
         </div>
     </div> <!--/.hero -->
 
-    <div class="main-content container">
+    <div class="main-content container clear">
         <main class="text-center content-text">
              <?php the_content(); ?>
         </main>

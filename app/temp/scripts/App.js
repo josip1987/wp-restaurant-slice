@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10334,6 +10334,53 @@ return jQuery;
 
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Fluidbox = function () {
+  function Fluidbox() {
+    _classCallCheck(this, Fluidbox);
+
+    this.galleryItem = (0, _jquery2.default)('.gallery a');
+    this.events();
+  }
+
+  _createClass(Fluidbox, [{
+    key: 'events',
+    value: function events() {
+      this.galleryItem.each(function () {
+        (0, _jquery2.default)(this).attr({ 'data-fluidbox': '' });
+      });
+
+      if ((0, _jquery2.default)('[data-fluidbox]').length > 0) {
+        (0, _jquery2.default)('[data-fluidbox]').fluidbox();
+      }
+    }
+  }]);
+
+  return Fluidbox;
+}();
+
+exports.default = Fluidbox;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
@@ -10382,7 +10429,7 @@ var Images = function () {
 exports.default = Images;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10429,24 +10476,29 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _MobileMenu = __webpack_require__(2);
+var _MobileMenu = __webpack_require__(3);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _Images = __webpack_require__(1);
+var _Images = __webpack_require__(2);
 
 var _Images2 = _interopRequireDefault(_Images);
+
+var _Fluidbox = __webpack_require__(1);
+
+var _Fluidbox2 = _interopRequireDefault(_Fluidbox);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
 var images = new _Images2.default();
+var fluidbox = new _Fluidbox2.default();
 
 /***/ })
 /******/ ]);

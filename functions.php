@@ -4,10 +4,18 @@
 
 		wp_register_style('style', get_template_directory_uri() . '/style.css', array(), 1.0 );
 		wp_enqueue_style('style');
+    
         wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900");
-
+        
    	    wp_enqueue_script('jquery');
-   	    wp_enqueue_script('App', get_stylesheet_directory_uri() . '/app/temp/scripts/App.js', array('jquery'), '1.0', true);
+        
+   	    wp_enqueue_script('App', get_template_directory_uri() . '/app/temp/scripts/App.js', array('jquery'), '1.0', true);
+        
+		wp_enqueue_style('fluidbox', get_stylesheet_directory_uri() . '/node_modules/fluidbox/dist/css/fluidbox.min.css');
+        wp_enqueue_style('fluidbox');
+        
+   	    wp_enqueue_script('fluidboxjs', get_template_directory_uri() . '/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js', array('jquery'), '1.0', true);
+        wp_enqueue_script('fluidboxjs');
 	}
 
 	add_action('wp_enqueue_scripts', 'wp_restaurant_styles');
@@ -29,6 +37,10 @@
         
         add_image_size('boxes', 437, 291, true);
         add_image_size('specialties', 768, 515, true);
+        
+        update_option('thumbnail_size_w', 253);
+        
+        update_option('thumbnail_size_h', 164);
     }
         
     add_action('after_setup_theme', 'wp_restaurant_setup');
