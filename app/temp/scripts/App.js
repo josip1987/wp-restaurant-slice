@@ -10334,8 +10334,10 @@ return jQuery;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _jquery = __webpack_require__(0);
 
@@ -10345,9 +10347,41 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Images = function Images() {
-  _classCallCheck(this, Images);
-};
+var Images = function () {
+    function Images() {
+        _classCallCheck(this, Images);
+
+        //make boxes same size as images initally and on resize
+        var images = (0, _jquery2.default)('.box-image');
+        if (images && images.length > 0) {
+            var imageHeight = images[0].height;
+            var boxes = (0, _jquery2.default)('.content-box');
+            (0, _jquery2.default)(boxes).css({ 'height': imageHeight + 'px' });
+            this.events();
+        }
+    }
+
+    _createClass(Images, [{
+        key: 'events',
+        value: function events() {
+            (0, _jquery2.default)(window).resize(function () {
+                var images = (0, _jquery2.default)('.box-image');
+                if (images && images.length > 0) {
+                    var imageHeight = images[0].height;
+                    var boxes = (0, _jquery2.default)('.content-box');
+
+                    (0, _jquery2.default)(boxes).each(function (i, element) {
+                        (0, _jquery2.default)(element).css({
+                            'height': imageHeight + 'px'
+                        });
+                    });
+                }
+            });
+        }
+    }]);
+
+    return Images;
+}();
 
 exports.default = Images;
 
@@ -10427,8 +10461,6 @@ var images = new _Images2.default();
         });
     });
 })(jQuery, undefined);
-
-console.log('sdsdg');
 
 /***/ })
 /******/ ]);

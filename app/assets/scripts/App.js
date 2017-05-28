@@ -13,5 +13,3 @@ var images = new Images();
         });
     });
 })(jQuery, this);
-
-console.log('sdsdg');
