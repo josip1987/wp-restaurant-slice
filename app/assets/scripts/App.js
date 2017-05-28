@@ -1,7 +1,17 @@
 import MobileMenu from './modules/MobileMenu';
 import Images from './modules/Images';
-import Fluidbox from './modules/Fluidbox';
 
 var mobileMenu = new MobileMenu();
 var images = new Images();
-var fluidbox = new Fluidbox();
+
+(function ($, root, undefined) {
+    $(function() {
+        'use strict';
+        
+        jQuery('.gallery .gallery-item a').fancybox({
+            openEffect: 'fade'
+        });
+    });
+})(jQuery, this);
+
+console.log('sdsdg');

@@ -9,13 +9,13 @@
         
    	    wp_enqueue_script('jquery');
         
+		wp_enqueue_style('fancybox', get_stylesheet_directory_uri() . '/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css');
+        wp_enqueue_style('fancybox');
+        
+   	    wp_enqueue_script('fancyboxjs', get_template_directory_uri() . '/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js', array('jquery'), '1.0', true);
+        wp_enqueue_script('fancyboxjs');
+        
    	    wp_enqueue_script('App', get_template_directory_uri() . '/app/temp/scripts/App.js', array('jquery'), '1.0', true);
-        
-		wp_enqueue_style('fluidbox', get_stylesheet_directory_uri() . '/node_modules/fluidbox/dist/css/fluidbox.min.css');
-        wp_enqueue_style('fluidbox');
-        
-   	    wp_enqueue_script('fluidboxjs', get_template_directory_uri() . '/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js', array('jquery'), '1.0', true);
-        wp_enqueue_script('fluidboxjs');
 	}
 
 	add_action('wp_enqueue_scripts', 'wp_restaurant_styles');
