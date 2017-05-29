@@ -11,7 +11,7 @@
     </div> <!--/.hero -->
 
     <div class="main-content container clear">
-        <main class="text-center content-text">
+        <main class="text-center content-text" id="gallery">
              <?php the_content(); ?>
         </main>
     </div> <!--/.main-content -->
