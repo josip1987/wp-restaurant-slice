@@ -980,6 +980,49 @@ article.entry {
         width: 25%!important
 }
 	}
+.reservation {
+    background-image: url(app/assets/images/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+@media(min-width: 768px) {
+.reservation .reservation-info {
+            margin-left: 50%
+    }
+	}
+.reservation .reservation-form h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+.reservation .reservation-form .field {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+.reservation .reservation-form .field input, .reservation .reservation-form .field textarea {
+        width: 100%;
+        border: 3px solid #000000;
+        padding: 15px 10px;
+    }
+.reservation .reservation-form .field textarea {
+        height: 200px;
+    }
+.reservation .reservation-form ::-webkit-input-placeholder {
+        color: #000000!important;
+    }
+.reservation .reservation-form :moz-placeholder {
+        color: #000000!important;
+    }
+.reservation .reservation-form ::moz-placeholder {
+        color: #000000!important;
+    }
+.reservation .reservation-form ::ms-input-placeholder {
+        color: #000000!important;
+    }
+.reservation .reservation-form input[type="submit"] {
+        border: none;
+        padding: 10px 30px;
+        margin-top: 0;
+    }
 .sidebar .searchform div {
     position: relative;
 }

@@ -1,0 +1,68 @@
+.reservation {
+    background-image: url(app/assets/images/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    
+    & .reservation-info {
+        @mixin atSmall {
+            margin-left: 50%;
+        }
+    }
+    
+    & .reservation-form h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    
+    & .reservation-form .field {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    & .reservation-form .field input, .reservation-form .field textarea {
+        width: 100%;
+        border: 3px solid $black;
+        padding: 15px 10px;
+    }
+    
+    & .reservation-form .field textarea {
+        height: 200px;
+    }
+    
+    & .reservation-form ::-webkit-input-placeholder {
+        color: $black!important;
+    }
+    
+    & .reservation-form :moz-placeholder {
+        color: $black!important;
+    }
+    
+    & .reservation-form ::moz-placeholder {
+        color: $black!important;
+    }
+    
+    & .reservation-form ::ms-input-placeholder {
+        color: $black!important;
+    }
+    
+    & .reservation-form input[type="submit"] {
+        border: none;
+        padding: 10px 30px;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

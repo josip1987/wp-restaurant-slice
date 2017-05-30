@@ -13,7 +13,6 @@ var images = new Images();
         $('.gallery-item').each(function(index) {
             var rel = "group"+$(this).attr('id');
             $('.gallery-item a').addClass('fancybox').attr('data-fancybox', rel);
-            
         });
         $('.fancybox').fancybox(); 
     });
