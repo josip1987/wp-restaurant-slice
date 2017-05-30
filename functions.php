@@ -1,4 +1,13 @@
 <?php 
+
+    // Link or Import database.php file 
+
+    require get_template_directory() . '/inc/database.php';
+
+    require get_template_directory() . '/inc/reservations.php';
+
+    //
+
 	function wp_restaurant_styles() {
 		wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/node_modules/font-awesome/css/font-awesome.min.css');
 

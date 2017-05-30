@@ -28,7 +28,7 @@ get_header(); ?>
                          <input type="datetime-local" name="date" placeholder="Date" required>
                      </div>
                      <div class="field">
-                         <input type="email" name="email" placeholder="E-Mail" required>
+                         <input type="text" name="email" placeholder="E-Mail" required>
                      </div>
                      <div class="field">
                          <input type="tel" name="phone" placeholder="Phone Number" required>
@@ -36,7 +36,7 @@ get_header(); ?>
                      <div class="field">
                          <textarea name="message" placeholder="Message" required></textarea>
                      </div>
-                     <input type="submit" name="submit" class="button" value="Send">
+                     <input type="submit" name="reservation" class="button" value="Send">
                      <input type="hidden" name="hidden" value="1">
                  </form>
             </div> <!--/.reservation-info -->
