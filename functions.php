@@ -1,10 +1,13 @@
 <?php 
 
-    // Link or Import database.php file 
-
+    // Link or Import database.php file - SQL structure
     require get_template_directory() . '/inc/database.php';
 
+    // Handle submission to database
     require get_template_directory() . '/inc/reservations.php';
+
+    // Create option pages for the theme
+    require get_template_directory() . '/inc/options.php';
 
     //
 

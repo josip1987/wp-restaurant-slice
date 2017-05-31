@@ -1023,6 +1023,44 @@ article.entry {
         padding: 10px 30px;
         margin-top: 0;
     }
+.home .hero {
+        height: 750px;
+        top: 0;
+        z-index: 0;
+    }
+@media(min-width: 768px) {
+.home .main-content {
+            margin-top: 0
+    }
+	}
+@media(min-width: 768px) {
+.home .hero-text {
+            width: 50%
+    }
+	}
+@media(min-width: 992px) {
+.home .hero-text {
+            width: 40%
+    }
+	}
+.home .hero-text p {
+        line-height: 40px;
+        font-size: 1.125rem;
+        
+    }
+/** Call to action button **/
+.secondary {
+    background-color: #f19f30;
+    padding: 15px 30px;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+.secondary:hover {
+    background-color: #da8b20;
+}
+.page-id-87 .hero {
+    top: 0;
+}
 .sidebar .searchform div {
     position: relative;
 }
