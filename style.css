@@ -1030,7 +1030,8 @@ article.entry {
     }
 @media(min-width: 768px) {
 .home .main-content {
-            margin-top: 0
+            margin-top: 0;
+            padding: 0
     }
 	}
 @media(min-width: 768px) {
@@ -1060,6 +1061,65 @@ article.entry {
 }
 .page-id-87 .hero {
     top: 0;
+}
+.specialty-content {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.specialty-content .information {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(241,159,48, .75);
+        text-align: center;
+        color: #FFF;
+        padding: 5px;
+        opacity: 0;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+.specialty-content .information a {
+            color: #FFF;
+        }
+.specialty-content .information h3 {
+            font-size: 1.875rem;
+            margin-top: 40px;
+            font-weight: 700;
+            color: #FFF;
+        }
+.specialty-content .information .price {
+        font-size: 3.75rem;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+.specialty-content .information p {
+        margin: 0 0 10px 0;
+        color: #FFF;
+    }
+.specialty-content:hover .information {
+    top: 0;
+    opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+    .specialty-content {
+        overflow: visible;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .specialty-content .information {
+        position: relative;
+        opacity: 1;
+        background-color: #f19f30;
+        padding: 30px;
+    }
+    
+    .specialty-content img {
+        width: 100%;
+    }
 }
 .sidebar .searchform div {
     position: relative;
