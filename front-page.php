@@ -71,9 +71,7 @@
     <section class="location-reservation container clear">
         <div class="container-grid">
             <div class="columns2-4">
-                <div id="map">
-                    map here
-                </div>
+                <div id="map"></div>
             </div>
             <div class="columns2-4">
                 <?php get_template_part('templates/reservation', 'form'); ?>
@@ -81,7 +79,16 @@
         </div>
     </section> <!--/section -->
 
-    
+    <script>
+        var map;
+            function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+        }
+    </script>
+
 <?php get_footer(); ?>
 
 

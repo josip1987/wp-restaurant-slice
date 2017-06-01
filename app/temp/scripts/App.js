@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10393,6 +10393,60 @@ exports.default = Images;
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Maps = function () {
+    function Maps() {
+        _classCallCheck(this, Maps);
+
+        this.breakpoint = 768;
+        this.map = (0, _jquery2.default)('#map');
+        if ((0, _jquery2.default)(document).width() >= this.breakpoint) {
+            this.displayMap(0);
+        } else {
+            this.displayMap(300);
+        }
+    }
+
+    // control the map height
+
+    _createClass(Maps, [{
+        key: 'displayMap',
+        value: function displayMap(value) {
+            if (value == 0) {
+                var locationSection = (0, _jquery2.default)('.location-reservation');
+                var locationHeight = locationSection.height();
+                (0, _jquery2.default)(this.map).css({ 'height': locationHeight });
+            } else {
+                (0, _jquery2.default)(this.map).css({ 'height': value });
+            }
+        }
+    }]);
+
+    return Maps;
+}();
+
+exports.default = Maps;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
@@ -10433,13 +10487,13 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _MobileMenu = __webpack_require__(2);
+var _MobileMenu = __webpack_require__(3);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
@@ -10447,10 +10501,17 @@ var _Images = __webpack_require__(1);
 
 var _Images2 = _interopRequireDefault(_Images);
 
+var _Maps = __webpack_require__(2);
+
+var _Maps2 = _interopRequireDefault(_Maps);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
 var images = new _Images2.default();
+var maps = new _Maps2.default();
+
+// gallery stuff
 
 (function ($, root, undefined) {
     $(function () {

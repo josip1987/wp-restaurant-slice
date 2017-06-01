@@ -1,8 +1,12 @@
 import MobileMenu from './modules/MobileMenu';
 import Images from './modules/Images';
+import Maps from './modules/Maps';
 
 var mobileMenu = new MobileMenu();
 var images = new Images();
+var maps = new Maps();
+
+// gallery stuff
 
 (function ($, root, undefined) {
     $(function() {
@@ -17,3 +21,4 @@ var images = new Images();
         $('.fancybox').fancybox(); 
     });
 })(jQuery, this);
+
