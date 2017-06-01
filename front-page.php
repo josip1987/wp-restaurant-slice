@@ -82,9 +82,21 @@
     <script>
         var map;
             function initMap() {
+                
+            var latLng = {
+              lat: 43.5231644,
+              lng: 16.4413772
+            };
+                
             map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -34.397, lng: 150.644},
-              zoom: 8
+              center: latLng,
+              zoom: 12
+            });
+                
+            var marker = new google.maps.Marker({
+              position: latLng,
+              map: map,
+              title: 'Our Location'
             });
         }
     </script>

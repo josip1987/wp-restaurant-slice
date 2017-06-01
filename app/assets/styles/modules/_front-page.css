@@ -198,6 +198,11 @@ section.location-reservation {
     background-position: center center;
     background-size: cover;
     margin-top: 50px;
+    width: 100%;
+    
+    & .columns2-4 {
+        padding: 0;
+    }
 }
 
 .home {
@@ -210,7 +215,7 @@ section.location-reservation {
     & .reservation-form h2 {
         text-align: center;
         margin: 0 0 20px 0;
-        font-size: 2.125rem;
+        font-size: 1.5rem;
     }
     
     & .reservation-form input, & .reservation-form textarea {
