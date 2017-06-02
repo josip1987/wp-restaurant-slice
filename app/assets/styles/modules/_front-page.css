@@ -27,6 +27,13 @@
         font-size: 1.125rem;
         
     }
+    
+    & .special-services-title {
+        @mixin maxSmall {
+            font-size: 1.8rem;
+            margin-top: -35px;
+        }
+    }
 }
 
 /** Call to action button **/
@@ -45,7 +52,7 @@
     top: 0;
 }
 
-.specialty-content {
+.home .specialty-content {
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -71,7 +78,7 @@
         
         & h3 {
             @mixin atSmall {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 margin-top: 30px;
                 font-weight: 700;
                 color: $white;
@@ -227,6 +234,10 @@ section.location-reservation {
     & .reservation-form input[type="submit"] {
         background-color: $red;
         border: none;
+        
+        @mixin maxSmall {
+           width: 100%;
+        }
     }
     
     & .reservation-form ::-webkit-input-placeholder {
@@ -244,11 +255,13 @@ section.location-reservation {
     & .reservation-form ::ms-input-placeholder {
         color: $white!important;
     }
+    
+    & .gallery {
+        float: none;
+    }
 }
 
 #map {
-  
-    
     @mixin maxSmall {
         height: 300px!important;
     }

@@ -27,10 +27,23 @@
    	    wp_enqueue_script('fancyboxjs', get_template_directory_uri() . '/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js', array('jquery'), '1.0', true);
         wp_enqueue_script('fancyboxjs');
         
-        wp_enqueue_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDwKb-NX9CsoqMrbkT3aHDhTP8EWszE5-U&callback=initMap', array(), '', true);
+        // $apikey = esc_html(get_option('google_maps_ApiKey'));
+        $apikey = 'AIzaSyDwKb-NX9CsoqMrbkT3aHDhTP8EWszE5-U';
+        wp_enqueue_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=' . $apikey . '&callback=initMap', array(), '', true);
         wp_enqueue_script('googlemaps');
         
    	    wp_enqueue_script('App', get_template_directory_uri() . '/app/temp/scripts/App.js', array('jquery'), '1.0', true);
+        
+        // pass php to js
+        wp_localize_script(
+            'App',
+            'options',
+            array(
+                'latitude' => esc_html( get_option('google_maps_latitude') ),
+                'longitude' => esc_html( get_option('google_maps_longitude') ),
+                'zoom' => esc_html( get_option('google_maps_zoom') )
+            )
+        );
 	}
 
 	add_action('wp_enqueue_scripts', 'wp_restaurant_styles');

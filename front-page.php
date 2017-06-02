@@ -16,7 +16,7 @@
 
     <div class="main-content container clear">
         <main class="container-grid clear" id="gallery">
-             <h2 class="primary-text text-center">Special Services</h2>
+             <h2 class="primary-text text-center special-services-title">Special Services</h2>
              <?php $args = array(
                 'posts_per_page' => 3,
                 'post_type' => 'specialties',
@@ -83,15 +83,21 @@
         var map;
             function initMap() {
                 
+            console.log(typeof(options.latitude));
+                
             var latLng = {
-              lat: 43.5231644,
-              lng: 16.4413772
+              lat: 43.5536298, //parseFloat( options.latitude ),
+              lng: 16.4554913 //parseFloat( options.longitude )
             };
                 
             map = new google.maps.Map(document.getElementById('map'), {
               center: latLng,
-              zoom: 12
+              zoom: 12 //parseInt( options.zoom ) 
             });
+                
+            // key AIzaSyDwKb-NX9CsoqMrbkT3aHDhTP8EWszE5-U
+                
+            // AIzaSyC7HLkWOMpQ4VNpaHQ_Coj4h8mmGyUOteo
                 
             var marker = new google.maps.Marker({
               position: latLng,

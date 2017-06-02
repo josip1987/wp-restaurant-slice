@@ -492,7 +492,7 @@ div.logo {
 }
 	}
 img.logoimage {
-    width: 250px;
+    width: 230px;
 }
 nav.socials ul {
     list-style: none;
@@ -557,7 +557,7 @@ nav.site-nav ul li {
 	}
 nav.site-nav ul li a {
         text-align: center;
-        padding: 20px 0;
+        padding: 17px 0;
         display: block;
         font-weight: 700;
         text-decoration: none;
@@ -1050,6 +1050,12 @@ article.entry {
         font-size: 1.125rem;
         
     }
+@media(max-width: 767px) {
+.home .special-services-title {
+            font-size: 1.8rem;
+            margin-top: -35px
+    }
+	}
 /** Call to action button **/
 .secondary {
     background-color: #f19f30;
@@ -1063,12 +1069,12 @@ article.entry {
 .page-id-87 .hero {
     top: 0;
 }
-.specialty-content {
+.home .specialty-content {
     position: relative;
     overflow: hidden;
     padding: 0;
 }
-.specialty-content .information {
+.home .specialty-content .information {
         position: absolute;
         top: 50%;
         margin-top: -3px;
@@ -1083,19 +1089,19 @@ article.entry {
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
-.specialty-content .information a {
+.home .specialty-content .information a {
             color: #FFF;
         }
 @media(min-width: 768px) {
-.specialty-content .information h3 {
-                font-size: 1.5rem;
+.home .specialty-content .information h3 {
+                font-size: 1.2rem;
                 margin-top: 30px;
                 font-weight: 700;
                 color: #FFF
         }
 	}
 @media(min-width: 992px) {
-.specialty-content .information h3 {
+.home .specialty-content .information h3 {
                 font-size: 1.875rem;
                 margin-top: 40px;
                 font-weight: 700;
@@ -1103,20 +1109,20 @@ article.entry {
         }
 	}
 @media(min-width: 768px) {
-.specialty-content .information .price {
+.home .specialty-content .information .price {
                 font-size: 2rem;
                 font-weight: 700;
                 margin-top: 0px
     }
 	}
 @media(min-width: 992px) {
-.specialty-content .information .price {
+.home .specialty-content .information .price {
                 font-size: 3rem;
                 margin-top: 30px
     }
 	}
 @media(min-width: 768px) {
-.specialty-content .information p {
+.home .specialty-content .information p {
                 margin: 0 0 10px 0;
                 padding: 5px;
                 font-size: 0.8rem;
@@ -1125,7 +1131,7 @@ article.entry {
     }
 	}
 @media(min-width: 992px) {
-.specialty-content .information p {
+.home .specialty-content .information p {
                 margin: 0 0 10px 0;
                 font-size: 0.9rem;
                 line-height: 1.875rem
@@ -1228,6 +1234,11 @@ section.location-reservation .columns2-4 {
         background-color: #a61206;
         border: none;
     }
+@media(max-width: 767px) {
+.home .reservation-form input[type="submit"] {
+           width: 100%
+    }
+	}
 .home .reservation-form ::-webkit-input-placeholder {
         color: #FFF!important;
     }
@@ -1239,6 +1250,9 @@ section.location-reservation .columns2-4 {
     }
 .home .reservation-form ::ms-input-placeholder {
         color: #FFF!important;
+    }
+.home .gallery {
+        float: none;
     }
 @media(max-width: 767px) {
 #map {

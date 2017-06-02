@@ -31,6 +31,9 @@
                 <div class="address">
                     <p>2343 Bay Avenue Mountain View, CA 90210</p>
                     <p>Phone Number: 123 456 789</p>
+                    <!-- <p> <?php echo esc_html(get_option('wp_restaurant_address')); ?> </p>
+                         <p>Phone Number: <?php echo esc_html(get_option('wp_restaurant_phone')); ?></p>
+                    -->
                 </div>
             </div> <!-- /.header-information -->
         </div> <!-- /.container -->
