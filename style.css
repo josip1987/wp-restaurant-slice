@@ -1045,10 +1045,19 @@ article.entry {
             width: 40%
     }
 	}
+.home .hero-text h2 {
+            margin-top: -40px;
+            font-size: 2rem;
+        }
+@media(min-width: 768px) {
+.home .hero-text h2 {
+                font-size: 2.5rem
+        }
+	}
 .home .hero-text p {
         line-height: 40px;
         font-size: 1.125rem;
-        
+        padding: 0 5px;
     }
 @media(max-width: 767px) {
 .home .special-services-title {
@@ -1072,11 +1081,12 @@ article.entry {
 .home .specialty-content {
     position: relative;
     overflow: hidden;
+    margin-bottom: 30px;
     padding: 0;
 }
 .home .specialty-content .information {
         position: absolute;
-        top: 50%;
+        top: 0;
         margin-top: -3px;
         left: 0;
         height: 100%;
@@ -1085,12 +1095,25 @@ article.entry {
         text-align: center;
         color: #FFF;
         padding: 5px;
-        opacity: 0;
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
+@media(min-width: 480px) {
+.home .specialty-content .information {
+            max-width: 435px
+    }
+	}
+@media(min-width: 768px) {
+.home .specialty-content .information {
+            opacity: 0
+    }
+	}
 .home .specialty-content .information a {
             color: #FFF;
+            background-color: #da8b20;
+        }
+.home .specialty-content .information h3 {
+            margin-top: 30%;
         }
 @media(min-width: 768px) {
 .home .specialty-content .information h3 {
@@ -1108,17 +1131,12 @@ article.entry {
                 color: #FFF
         }
 	}
-@media(min-width: 768px) {
-.home .specialty-content .information .price {
-                font-size: 2rem;
-                font-weight: 700;
-                margin-top: 0px
+.home .specialty-content .information p {
+            display: none;
     }
-	}
-@media(min-width: 992px) {
-.home .specialty-content .information .price {
-                font-size: 3rem;
-                margin-top: 30px
+@media(min-width: 480px) {
+.home .specialty-content .information p {
+                display: block
     }
 	}
 @media(min-width: 768px) {
@@ -1137,30 +1155,23 @@ article.entry {
                 line-height: 1.875rem
     }
 	}
+@media(min-width: 768px) {
+.home .specialty-content .information .price {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-top: 0px
+    }
+	}
+@media(min-width: 992px) {
+.home .specialty-content .information .price {
+                font-size: 3rem;
+                margin-top: 30px
+    }
+	}
 .specialty-content:hover .information {
     top: 0;
     opacity: 1;
 }
-@media(max-width: 767px) {
-    .specialty-content {
-        /*overflow: visible;*/
-        display: block;
-        margin-bottom: 30px;
-        position: relative;
-    }
-    
-    .specialty-content .information {
-        position: absolute;
-        opacity: .9;
-        top: 0;
-        background-color: #f19f30;
-        padding: 30px;
-    }
-    
-    .specialty-content img {
-        width: 100%;
-    }
-	}
 section.ingredients {
     background-image: url(app/assets/images/bg_ingredients.jpg);
     background-repeat: no-repeat;
