@@ -1062,7 +1062,8 @@ article.entry {
 @media(max-width: 767px) {
 .home .special-services-title {
             font-size: 1.8rem;
-            margin-top: -35px
+            margin-top: -35px;
+            font-weight: 700
     }
 	}
 /** Call to action button **/
@@ -1084,6 +1085,19 @@ article.entry {
     margin-bottom: 30px;
     padding: 0;
 }
+.home .specialty-content .information-center {
+        margin-top: 30%;
+    }
+@media(min-width: 480px) {
+.home .specialty-content .information-center {
+            margin-top: 35%
+    }
+	}
+@media(min-width: 768px) {
+.home .specialty-content .information-center {
+            margin-top: inherit
+    }
+	}
 .home .specialty-content .information {
         position: absolute;
         top: 0;
@@ -1113,7 +1127,7 @@ article.entry {
             background-color: #da8b20;
         }
 .home .specialty-content .information h3 {
-            margin-top: 30%;
+            font-weight: 100;
         }
 @media(min-width: 768px) {
 .home .specialty-content .information h3 {
@@ -1127,8 +1141,15 @@ article.entry {
 .home .specialty-content .information h3 {
                 font-size: 1.875rem;
                 margin-top: 40px;
-                font-weight: 700;
                 color: #FFF
+        }
+	}
+.home .specialty-content .information .button {
+            margin-top: 0;
+        }
+@media(min-width: 768px) {
+.home .specialty-content .information .button {
+                margin-top: 20px
         }
 	}
 .home .specialty-content .information p {
@@ -1177,27 +1198,37 @@ section.ingredients {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin-top: 50px;
-    padding: 80px 0;
+    padding: 10px 0 40px 0;
     color: #FFF;
 }
+@media(min-width: 768px) {
+section.ingredients {
+        margin-top: 50px;
+        padding: 80px 0
+}
+	}
 section.ingredients h3 {
-        line-height: 3.75rem;
-        font-size: 2.5rem;
+        line-height: 2rem;
+        font-size: 1.8rem;
         font-weight: 700;
+        text-align: center;
     }
-@media(max-width: 767px) {
+@media(min-width: 768px) {
 section.ingredients h3 {
-            text-align: center
+            text-align: left;
+            line-height: 3.75rem;
+            font-size: 2.5rem;
+            font-weight: 700
     }
 	}
 section.ingredients p {
         line-height: 2.2rem;
         font-size: 1rem;
+        text-align: center;
     }
-@media(max-width: 767px) {
+@media(min-width: 768px) {
 section.ingredients p {
-            text-align: center
+            text-align: left
     }
 	}
 @media(max-width: 767px) {
@@ -1209,9 +1240,14 @@ section.ingredients a {
     }
 	}
 section.ingredients .image {
-        padding-top: 30px;
+        padding-top: 45px;
         text-align: center;
     }
+@media(min-width: 768px) {
+section.ingredients .image {
+            padding-top: 30px
+    }
+	}
 section.ingredients .image img {
         width: 80%;
     }
@@ -1229,8 +1265,13 @@ section.location-reservation .columns2-4 {
 .home .reservation-info {
         margin: 0;
         color: #FFF;
-        padding: 50px;
+        padding: 50px 30px;
     }
+@media(min-width: 768px) {
+.home .reservation-info {
+            padding: 50px
+    }
+	}
 .home .reservation-form h2 {
         text-align: center;
         margin: 0 0 20px 0;
@@ -1262,6 +1303,16 @@ section.location-reservation .columns2-4 {
 .home .reservation-form ::ms-input-placeholder {
         color: #FFF!important;
     }
+.home .section-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+@media(min-width: 768px) {
+.home .section-title {
+            font-size: 2.5rem;
+            font-weight: 900
+    }
+	}
 .home .gallery {
         float: none;
     }

@@ -30,10 +30,12 @@
                  <div class="specialty-content">
                      <?php the_post_thumbnail('portrait'); ?>
                      <div class="information">
-                         <?php the_title('<h3>', '</h3>'); ?>
-                         <?php the_content(); ?>
-                         <p class="price">&#8364;<?php the_field('price'); ?></p>
-                         <a href="<?php the_permalink(); ?>" class="button secondary">read more</a>
+                         <div class="information-center">
+                             <?php the_title('<h3>', '</h3>'); ?>
+                             <?php the_content(); ?>
+                             <p class="price">&#8364;<?php the_field('price'); ?></p>
+                             <a href="<?php the_permalink(); ?>" class="button secondary">read more</a>
+                        </div>
                      </div>
                  </div>
              </div>
@@ -61,7 +63,7 @@
     </section> <!--/section -->
 
     <section class="container clear">
-        <h2 class="primary-text text-center">Gallery</h2>
+        <h2 class="primary-text text-center section-title">Gallery</h2>
         <?php
             $url = get_page_by_title('Gallery');
             echo get_post_gallery($url->ID);
