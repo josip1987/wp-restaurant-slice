@@ -640,19 +640,26 @@ nav.site-nav ul li a:hover {
         }
 	}
 .main-content {
-    padding: 60px;
+    padding: 20px;
     background-color: #FFF;
     position: relative;
 }
 @media(min-width: 768px) {
 .main-content {
-        margin-top: -90px
+        margin-top: -90px;
+        padding: 60px
 }
 	}
-.content-text {
-    font-size: 1.125rem;
-    line-height: 50px;
+.main-content .content-text {
+    font-size: 1.05rem;
+    line-height: 30px;
 }
+@media(min-width: 768px) {
+.main-content .content-text {
+        font-size: 1.125rem;
+        line-height: 50px
+}
+	}
 .box-information .single-box {
         text-align: center;
         width: 100%;
@@ -706,11 +713,16 @@ nav.site-nav ul li a:hover {
         display: table-cell;
     }
 .footer {
-    margin-top: 30px;
-    padding: 30px 0;
+    padding: 10px 0;
     border-top: 1px solid #c1c1c1;
     text-align: center;
 }
+@media(min-width: 768px) {
+.footer {
+        margin-top: 30px;
+        padding: 30px 0
+}
+	}
 .footer nav ul {
         list-style: none;
         padding: 0;
@@ -719,17 +731,31 @@ nav.site-nav ul li a:hover {
             border-bottom: none;
         }
 .footer nav ul li {
-        display: inline;
+        display: block;
     }
-.footer nav ul li:last-child .separator {
+.footer nav ul li .separator {
             display: none;
         }
+@media(min-width: 480px) {
+.footer nav ul li {
+            display: inline
+    }
+
+            .footer nav ul li .separator {
+                display: inline;
+            }
+            
+            .footer nav ul li:last-child .separator {
+                display: none;
+            }
+	}
 .footer nav ul li a {
             color: #000000;
             text-transform: uppercase;
-            font-weight: 700;
             font-size: 1rem;
             text-decoration: none;
+            line-height: 20px;
+            font-weight: 700;
         }
 .footer .location {
         margin-top: 30px;
@@ -745,11 +771,21 @@ nav.site-nav ul li a:hover {
     color: #a61206;
 }
 .our-specialties {
-    padding: 0 60px;
+    padding: 0 20px;
 }
+@media(min-width: 768px) {
+.our-specialties {
+        padding: 0 60px
+}
+	}
 .specialty-content {
-    padding: 20px;
+    padding-top: 10px;
 }
+@media(min-width: 768px) {
+.specialty-content {
+        padding: 10px 20px
+}
+	}
 .specialty-content h4 {
         border-bottom: 1px solid #c1c1c1;
         padding: 15px 0;
@@ -770,7 +806,13 @@ nav.site-nav ul li a:hover {
 .specialty-content p {
         color: #3d3d3d;
         line-height: 1.875rem;
+        text-align: center;
     }
+@media(min-width: 768px) {
+.specialty-content p {
+            text-align: left
+    }
+	}
 .single .hero {
     top: 0;
 }
@@ -798,41 +840,59 @@ article.entry {
         margin-right: 20px;
     }
 .entry-header .date time {
-            font-size: 1.875rem;
+            font-size: 1.7rem;
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
+            position: relative;
+            top: 5px;
         }
+@media(min-width: 768px) {
+.entry-header .date time {
+                font-size: 1.875rem;
+                top: 0
+        }
+	}
 .entry-header .date time span {
             font-size: 1rem;
             display: block;
             text-transform: uppercase;
-            margin-top: -27px;
         }
+@media(min-width: 768px) {
+.entry-header .date time span {
+                margin-top: -27px
+        }
+	}
 .entry-header .entry-title {
         float: left;
         width: calc(100% - 90px);
     }
 .entry-header h2 {
         margin: 0;
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         font-weight: 700;
     }
 @media(min-width: 768px) {
 .entry-header h2 {
-            font-size: 1.5rem
+            font-size: 1rem
     }
 	}
 .entry-header .author {
-        font-size: 0.925rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         color: #000000;
-        margin-top: -20px;
+        margin-top: -5px;
         font-family: 'Raleway', sans-serif;
     }
+@media(min-width: 768px) {
+.entry-header .author {
+            margin-top: -25px
+    }
+	}
 .entry-header .author i {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: #f19f30;
+            margin-right: 2px;
         }
 .entry-content p {
         margin-bottom: 0;
@@ -872,27 +932,40 @@ article.entry {
         margin-right: 20px;
     }
 .entry-information .author {
-        font-size: 0.925rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         color: #000000;
-        margin-top: 20px;
         font-family: 'Raleway', sans-serif;
+        margin-top: 10px;
     }
 .entry-information .author i {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: #f19f30;
+            margin-right: 2px;
         }
 .entry-information time {
-        font-size: 1.875rem;
+        font-size: 1.7rem;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
+        position: relative;
+        top: 5px;
     }
+@media(min-width: 768px) {
+.entry-information time {
+            font-size: 1.875rem;
+            top: 0
+    }
+	}
 .entry-information time span {
         font-size: 1rem;
         display: block;
         text-transform: uppercase;
-        margin-top: -27px;
     }
+@media(min-width: 768px) {
+.entry-information time span {
+            margin-top: -27px
+    }
+	}
 .comment-respond h3 {
         font-weight: 700;
         text-align: center;
@@ -1059,11 +1132,15 @@ article.entry {
         font-size: 1.125rem;
         padding: 0 5px;
     }
-@media(max-width: 767px) {
 .home .special-services-title {
-            font-size: 1.8rem;
-            margin-top: -35px;
-            font-weight: 700
+        font-size: 1.8rem;
+        margin-top: 0px;
+        font-weight: 700;
+    }
+@media(min-width: 768px) {
+.home .special-services-title {
+            font-size: 2.5rem;
+            margin-top: 30px
     }
 	}
 /** Call to action button **/
@@ -1088,7 +1165,7 @@ article.entry {
 .home .specialty-content .information-center {
         margin-top: 30%;
     }
-@media(min-width: 480px) {
+@media(min-width: 360px) {
 .home .specialty-content .information-center {
             margin-top: 35%
     }
@@ -1154,6 +1231,8 @@ article.entry {
 	}
 .home .specialty-content .information p {
             display: none;
+            color: #FFF;
+            text-align: center;
     }
 @media(min-width: 480px) {
 .home .specialty-content .information p {
@@ -1165,8 +1244,7 @@ article.entry {
                 margin: 0 0 10px 0;
                 padding: 5px;
                 font-size: 0.8rem;
-                line-height: 0.93rem;
-                color: #FFF
+                line-height: 0.93rem
     }
 	}
 @media(min-width: 992px) {
@@ -1265,7 +1343,7 @@ section.location-reservation .columns2-4 {
 .home .reservation-info {
         margin: 0;
         color: #FFF;
-        padding: 50px 30px;
+        padding: 50px 20px;
     }
 @media(min-width: 768px) {
 .home .reservation-info {

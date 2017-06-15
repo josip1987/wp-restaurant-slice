@@ -3,11 +3,19 @@
 }
 
 .our-specialties {
-    padding: 0 60px;
+    padding: 0 20px;
+    
+    @mixin atSmall {
+        padding: 0 60px;
+    }
 }
 
 .specialty-content {
-    padding: 20px;
+    padding-top: 10px;
+    
+    @mixin atSmall {
+        padding: 10px 20px;
+    }
     
     & h4 {
         border-bottom: 1px solid $border;
@@ -31,6 +39,11 @@
     & p {
         color: $darkgrey;
         line-height: 1.875rem;
+        text-align: center;
+        
+        @mixin atSmall {
+            text-align: left;
+        }
     }
 }
 

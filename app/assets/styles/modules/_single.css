@@ -12,29 +12,40 @@
     }
         
     & .author {
-        font-size: 0.925rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         color: $black;
-        margin-top: 20px;
         font-family: 'Raleway', sans-serif;
+        margin-top: 10px;
         
         & i {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: $orange;
+            margin-right: 2px;
         }
     }
     
     & time {
-        font-size: 1.875rem;
+        font-size: 1.7rem;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
+        position: relative;
+        top: 5px;
+        
+        @mixin atSmall {
+            font-size: 1.875rem;
+            top: 0;
+        }
     }
 
     & time span {
         font-size: 1rem;
         display: block;
         text-transform: uppercase;
-        margin-top: -27px;
+        
+        @mixin atSmall {
+            margin-top: -27px;
+        }
     }
 }
 
